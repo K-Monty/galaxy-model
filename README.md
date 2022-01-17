@@ -37,7 +37,7 @@ Individual functions within `Galaxy` class (galaxy_model/galaxy.py):
 
 The basic syntax for the functions 1 and 2 is
 
-```
+```python
 from galaxy_model.galaxy import Galaxy
 gal = Galaxy()
 # arbitrary coordinates
@@ -48,7 +48,7 @@ plt.show()
 
 As for function 3
 
-```
+```python
 # import and instantiate Galaxy as above
 # other arbitraty coordinates
 coord_loc = gal.isOnSpiralArmOrSpur([0.72, 8.35], [12, 8.4], verbose=True)
