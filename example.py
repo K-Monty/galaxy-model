@@ -23,6 +23,7 @@ from astropy.coordinates import SkyCoord
 import astropy.coordinates as coord
 import matplotlib.pyplot as plt
 
+import galaxy_model # noqa
 from galaxy_model.galaxy import Galaxy
 
 
