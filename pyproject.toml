@@ -8,10 +8,10 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = ">=3.7,<3.10"
 descartes = "^1.1.0"
-matplotlib = "3.4.3"
-numpy = "1.20.3"
-scipy = "1.7.1"
-Shapely = "1.8.0"
+matplotlib = {version = "3.4.3", python = ">=3.7"}
+numpy = {version = "1.20.3", python = ">=3.7"}
+scipy = {version = "1.7.1", python = ">=3.6,<3.10"}
+Shapely = {version = "1.8.0", python = "<3.10"}
 
 [tool.poetry.dev-dependencies]
 

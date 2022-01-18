@@ -10,19 +10,21 @@ The following packages are required for this module to work:
 - `scipy`
 - `Shapely`
 
-For exact versions, please refer to requirements.txt. However, most of the other versions will also work for this model.
+As for the versions used here, please refer to requirements.txt or pyproject.toml.
+
+**WARNING: Do not use python version 3.10!**
 
 Packages not required for this module, but often used within the workflow (see example.py):
 
 - `astropy`
 
-This module can be installed by either 
+This module, along with the dependencies stated in pyproject.toml, can be installed directly by  
 
 ```
 pip install git+https://github.com/K-Monty/galaxy-model.git
 ```
 
-or downloadable directly from the [release](https://github.com/K-Monty/galaxy-model/releases).
+The source code can also be downloaded [here](https://github.com/K-Monty/galaxy-model/releases).
 
 ## How to use
 See [examply.py](https://github.com/K-Monty/galaxy-model/blob/main/example.py) for a working workflow, from the conversion of astronomical coordinate system (not included in this package) to the plotting & location checks of (cartesian) coordinates. 
@@ -35,7 +37,7 @@ Individual functions within `Galaxy` class (galaxy_model/galaxy.py):
 
 3. `isOnSpiralArmOrSpur(x_coord: list, y_coord: list, verbose=False)` check whether the given coordinates is/are on spiral arm(s) or spur. Set verbose as True for more details, e.g. what spiral arm(s) a coordinate is on.
 
-The basic syntax for the functions 1 and 2 is
+The basic syntax for the functions 1. and 2. is
 
 ```python
 from galaxy_model.galaxy import Galaxy
@@ -46,7 +48,7 @@ gal.plot(plotSrc=True)
 plt.show()
 ```
 
-As for function 3
+As for function 3.
 
 ```python
 # import and instantiate Galaxy as above
