@@ -59,7 +59,7 @@ print(coord_loc)
 
 The `coord_loc` is a list of encoded locations  of the given coordinates. The encoding is as below:
 
-- 0 of the coordinate is on neither a spiral arm nor a spur
+- 0 if the coordinate is on neither a spiral arm nor a spur
 
 - 1 if the coordinate is on a spiral arm
 
